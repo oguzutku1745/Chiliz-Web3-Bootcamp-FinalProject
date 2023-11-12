@@ -2,13 +2,13 @@ import React from "react"
 import Image from "next/image"
 import VerifySigCard from "@/components/VeriySign"
 import { useAddress, useOwnedNFTs } from "@thirdweb-dev/react";
-import { getNFTContract } from "@/utils/getContract";
+import { useNFTContract } from "@/utils/getContract";
 
 
 export default function CheckSignature() {
 
     const address = useAddress();
-    const {nft_contract} = getNFTContract();
+    const {nft_contract} = useNFTContract();
     console.log(address)
     const {data:ownedNFTs, isLoading, error} = useOwnedNFTs(nft_contract, address)
 

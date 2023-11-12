@@ -1,4 +1,4 @@
-import { getNFTContract } from "@/utils/getContract";
+import { useNFTContract } from "@/utils/getContract";
 import { useAddress, useMintNFT, useSigner } from "@thirdweb-dev/react";
 import React from "react";
 import { useAccount } from "wagmi";
@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Forma() {
   const address = useAddress();
 
-  const { nft_contract } = getNFTContract();
+  const { nft_contract } = useNFTContract();
   const signer = useSigner(); 
 
     console.log(signer)

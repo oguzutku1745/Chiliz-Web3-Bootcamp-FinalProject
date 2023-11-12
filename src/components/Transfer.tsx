@@ -1,4 +1,4 @@
-import {getNFTContract} from "@/utils/getContract";
+import {useNFTContract} from "@/utils/getContract";
 import { useState, type FC } from "react";
 
 
@@ -9,7 +9,7 @@ interface TransferNFTCardProps {
 const TransferCard: FC<TransferNFTCardProps> = ({ id }) => {
 
     const [address, setAddress] = useState("")
-    const {nft_contract} = getNFTContract();
+    const {nft_contract} = useNFTContract();
 
     console.log(nft_contract)
 

@@ -4,7 +4,7 @@ const getNFTAddress = () => {
     return process.env.NEXT_PUBLIC_NFT_CONTRACT_ADDRESS ?? "";
 };
 
-export const getNFTContract = () => {
+export const useNFTContract = () => {
     const nft_address = getNFTAddress();
     const { contract: nft_contract, isLoading: nftLoading } =
         useContract(nft_address);

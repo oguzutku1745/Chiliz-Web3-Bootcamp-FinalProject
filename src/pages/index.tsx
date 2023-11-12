@@ -1,13 +1,13 @@
 import { Inter } from 'next/font/google'
 import NFTCard from '@/components/NFTCard';
-import { getNFTContract } from '@/utils/getContract';
+import { useNFTContract } from '@/utils/getContract';
 import { useAddress, useOwnedNFTs } from '@thirdweb-dev/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const address = useAddress();
-  const {nft_contract} = getNFTContract();
+  const {nft_contract} = useNFTContract();
   console.log(address)
   const {data:ownedNFTs, isLoading, error} = useOwnedNFTs(nft_contract, address)
 

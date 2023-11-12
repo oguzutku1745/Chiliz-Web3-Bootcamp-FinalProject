@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { getNFTContract } from "@/utils/getContract";
+import { useNFTContract } from "@/utils/getContract";
 import { useNFT } from "@thirdweb-dev/react";
 import NFTDetails from "@/components/NFTDetails";
 import TransferCard from "@/components/Transfer";
@@ -10,7 +10,7 @@ function NFTDetailsPage() {
     const router = useRouter();
     const [nftID, setNftID] = useState("NFTDetails");
 
-    const {nft_contract} = getNFTContract();
+    const {nft_contract} = useNFTContract();
 
 
     const {data:nft,isLoading:isNFTLoading} = useNFT(nft_contract, nftID)

@@ -49,7 +49,9 @@ export default function Forma() {
   }
 
   return (
-    <div className="flex w-screen h-screen justify-center items-center">
+    <div className="flex flex-col w-screen h-screen justify-center items-center">
+      <div className="flex flex-col w-screen h-screen justify-center items-center gap-y-10">
+      <h1>Mint your Cr7 jersey, go to Homepage; then click on your jersey to convert it to a wallet.</h1>
       <div className="relative bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-2xl text-center">
         <div className="m-5">
           <Image 
@@ -64,8 +66,9 @@ export default function Forma() {
           onClick={handleMint}
           disabled={isLoading}
         >
-          {isLoading ? 'Minting...' : 'Mint Cr7 Shirt'}
+          {isLoading ? 'Minting...' : 'Mint Cr7 Jersey'}
         </button>
+      </div>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <div className="flex gap-x-20">
                     <Link href="/">Homepage</Link>
-                    <Link href="/forma">Cr7 Shirt Mint</Link>
+                    <Link href="/forma">Cr7 Jersey Mint</Link>
                     <Link href="/signature">Signature Mint</Link>
                     <Link href="/checkSignature">Check Signature</Link>
             </div>

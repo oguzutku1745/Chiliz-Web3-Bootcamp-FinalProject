@@ -24,7 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
           	<Menubar>
 					<Component {...pageProps} />
           	</Menubar>
-			<Footer />
+			{ /* <Footer /> */}
 		  </ThirdwebProvider>
 			) : null}
 		</>

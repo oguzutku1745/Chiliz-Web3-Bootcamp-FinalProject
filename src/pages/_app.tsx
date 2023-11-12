@@ -21,9 +21,9 @@ export default function App({ Component, pageProps }: AppProps) {
         	    clientId={process.env.NEXT_PUBLIC_CLIENT_ID}
         	    supportedWallets={[metamaskWallet()]}
         	>
-          	<Menubar>
+          	{/*<Menubar>*/}
 					<Component {...pageProps} />
-          	</Menubar>
+          	{/*</Menubar>*/}
 			{ /* <Footer /> */}
 		  </ThirdwebProvider>
 			) : null}

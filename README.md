@@ -53,6 +53,16 @@ To run this project, you will need to add the following environment variables to
 `NEXT_PUBLIC_RPC_URL = "https://spicy-rpc.chiliz.com/"`
 
 
+## Screenshots
+
+You can create a Token Bound Account (can be think as wallet for our case) from Homepage
+![Creating Wallet for NFT](https://i.imgur.com/vOciD4v.png)
+
+After sending signature NFT to that wallet, you can check the signature!
+![Signature Check](https://i.imgur.com/CsazSb9.png)
+
+
+
 ## Contributing
 
 Pull requests are welcome. If you're considering major changes, kindly open an issue first to discuss your proposed alterations.

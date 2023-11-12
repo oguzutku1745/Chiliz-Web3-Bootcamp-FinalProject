@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@thirdweb-dev/react": "^4.1.2",
-    "@web3modal/wagmi": "3.2.1",
     "dotenv": "^16.3.1",
     "next": "14.0.2",
     "react": "^18",

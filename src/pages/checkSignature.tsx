@@ -15,7 +15,7 @@ export default function CheckSignature() {
     return(
         <div className="flex flex-col w-screen justify-center items-center">
             <div className="flex flex-col w-screen p-20 justify-center items-center gap-y-10">
-            <h1>You can check if your forma has signature or not from this page. Maybe you are lucky 😊</h1>
+            <h1>You can check if your forma has signature or not from this page. Maybe you are lucky</h1>
             </div>
             <div>
             {isLoading ? <div>Loading NFT Data...</div> : <div className='flex flex-col gap-y-10'>

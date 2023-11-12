@@ -48,7 +48,7 @@ export default function Signature() {
     return(
         <div className="flex flex-col w-screen justify-center items-center">
             <div className="flex flex-col w-screen h-screen justify-center items-center gap-y-10">
-            <h1>This page will be spesifically for Ronaldo's minting when he has a wallet. Since he is not in Bootcamp, you are free to make it for him.</h1>
+            <h1>This page will be specifically for Ronaldo&apos;s minting when he has a wallet. Since he is not in Bootcamp, you are free to make it for him.</h1>
             <h1>To sign the forma, you should convert your wallet to NFT from Homepage and copy its wallet address. Then transfer the Signature NFT to Forma.</h1>
               <div className="relative bg-gray-800 text-white p-6 rounded-lg shadow-md max-w-2xl text-center">
                 <div className="m-5">

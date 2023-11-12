@@ -1,40 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Suppose You're Ronaldo
 
-First, run the development server:
+This app bringing the [ERC-6551](https://eips.ethereum.org/EIPS/eip-6551) which also known as Token Bound Accounts.
+
+What Token Bound Accounts do is give wallets to NFTs. In this way, NFTs transform from just being assets to becoming wallets with memories, capable of triggering on-chain transactions.
+
+Do you have any kind of jersey? Get a signature from the jersey's owner; and make your jersey even more valuable.
+
+
+
+## Examples
+
+Since Ronaldo doesn't have a wallet yet, he can't mint NFTs, but if he did, the signature NFT would be exclusive to him. Therefore, a signature NFT (or ERC-1155) coming from Ronaldo's wallet to any other NFT wallet will create a significant difference in value.
+
+So know, suppose you're Ronaldo, and give it a try.
+
+
+## Deployment
+
+To deploy this project, clone the repo and add .env
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/oguzutku1745/Chiliz-Web3-Bootcamp-FinalProject/
+  cd Chiliz-Web3-Bootcamp-FinalProject
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+You need 4 different contract addresses. 
+- First one can be any NFT collection which can be directly deployed from Thirdweb.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+- Signature NFT of Ronaldo (Can be ERC-721 or ERC-1155. ERC-1155 makes more sense)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [ERC6551Registry](https://spicy-explorer.chiliz.com/address/0x55942f237C32dFEc9F04a82ef0C2b0671565a8Ee/contracts#address-tabs)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- [ERC6551Account (Implementation Contract)](https://spicy-explorer.chiliz.com/address/0x6A7eA5d2851939e367b31b96aD60EBE6B49B6E9b/contracts#address-tabs)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+First NFT's address should be changed with `NEXT_PUBLIC_NFT_CONTRACT_ADDRESS`, Signature NFT should be changed with "signature" variable.
 
-## Learn More
+No need to change the Registry and Implementation contract for this project.
 
-To learn more about Next.js, take a look at the following resources:
+If you want to add more utility, please feel free to change the implementation contract; and give more freedom to NFT's wallets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Environment Variables
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run this project, you will need to add the following environment variables to your .env file
 
-## Deploy on Vercel
+`NEXT_PUBLIC_CLIENT_ID` (Derive it from https://thirdweb.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`NEXT_PUBLIC_NFT_CONTRACT_ADDRESS `
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`NEXT_PUBLIC_NETWORK = "SpicyChain"`
+
+`NEXT_PUBLIC_RPC_URL = "https://spicy-rpc.chiliz.com/"`
+
+
+## Contributing
+
+Pull requests are welcome. If you're considering major changes, kindly open an issue first to discuss your proposed alterations.
+
